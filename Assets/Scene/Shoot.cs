@@ -26,7 +26,9 @@ public class Shoot : MonoBehaviour {
         rigidBody.AddForce(transformForward * ForceMagnitude);
     }
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void Update () {}
+
+    public void OnShoot() {
+        ShootBall(InteractionSourceKind.Voice, 1, new Ray());
+    }
 }
